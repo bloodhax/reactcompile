@@ -15,8 +15,6 @@ class Body extends Component {
                   <div className="container">
                     <div id="massive-menu" className="menuzord">
                       <a className="logo-brand" href="http://massive.themebucket.net/" title="Massive"><img src="wp-content/uploads/2016/01/massive-logo-dark.png" data-retina="wp-content/uploads/2016/01/massive-dark-logo@2x.png" alt="Massive" /></a><ul id="menu-x-one-page-default" role="menubar" className="menuzord-menu menuzord-right bucket-nav-standard"><li id="menu-item-2144" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2144" role="menuitem"><a href="/">HOME</a></li>
-                        <li id="menu-item-2145" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2145" role="menuitem"><a href="#aboutus">ABOUT US</a></li>
-                        <li id="menu-item-2146" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2146" role="menuitem"><a href="#team">CONTACT US</a></li>
                         <li id="menu-item-2147" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2147" role="menuitem"><a href="/login">LOG IN</a></li>
                         <li className="nav-icon nav-divider"><a href="javascript:void(0)">|</a></li>        <li className="nav-icon cart-info">
                         </li><li id="menu-item-2148" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2148" role="menuitem"><a href="/signup">JOIN</a></li>

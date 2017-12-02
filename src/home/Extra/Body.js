@@ -155,19 +155,19 @@ class Body extends Component {
                                       <div className="row">
                                         <div className="col-md-6 form-group">
                                           {/* Name */}<br />
-                                          <span className="wpcf7-form-control-wrap name"><input type="text" name="name" defaultValue size={40} className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Name *" /></span>
+                                          <span className="wpcf7-form-control-wrap name"><input type="text" name="name" size={40} className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Name *" /></span>
                                         </div>
                                         <div className="col-md-6 form-group">
                                           {/* Email */}<br />
-                                          <span className="wpcf7-form-control-wrap email"><input type="email" name="email" defaultValue size={40} className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Email *" /></span>
+                                          <span className="wpcf7-form-control-wrap email"><input type="email" name="email" size={40} className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Email *" /></span>
                                         </div>
                                         <div className="form-group col-md-6">
                                           {/* Phone */}<br />
-                                          <span className="wpcf7-form-control-wrap phone"><input type="text" name="phone" defaultValue size={40} className="wpcf7-form-control wpcf7-text form-control" aria-invalid="false" placeholder="Phone" /></span>
+                                          <span className="wpcf7-form-control-wrap phone"><input type="text" name="phone" size={40} className="wpcf7-form-control wpcf7-text form-control" aria-invalid="false" placeholder="Phone" /></span>
                                         </div>
                                         <div className="form-group col-md-6">
                                           {/* Subject */}<br />
-                                          <span className="wpcf7-form-control-wrap subject"><input type="text" name="subject" defaultValue size={40} className="wpcf7-form-control wpcf7-text form-control" aria-invalid="false" placeholder="Subject" /></span>
+                                          <span className="wpcf7-form-control-wrap subject"><input type="text" name="subject" size={40} className="wpcf7-form-control wpcf7-text form-control" aria-invalid="false" placeholder="Subject" /></span>
                                         </div>
                                         <p>        {/* Comment */}</p>
                                         <div className="form-group col-md-12">
