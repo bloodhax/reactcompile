@@ -9,6 +9,12 @@ import { renderToString } from 'react-dom/server';
 import App from './src/home/App';
 import Login from './src/login/Login'
 import Signup from './src/signup/Signup'
+import Admin from './src/admin/Admin'
+import User from './src/user/User'
+import Request from './src/request/Request'
+import Notification from './src/notification/Notification'
+import Transaction from './src/transaction/Transaction'
+import Feedback from './src/feedback/Feedback'
 
 const app = express();
 
@@ -39,6 +45,48 @@ app.get('/signup', (req, res) =>{
     res.render('src/signup/signup', (err, html) => {
         if (err) throw err;
         res.send(html.replace('content', renderToString(<Signup />)));
+    });
+});
+
+app.get('/admin', (req, res) =>{
+    res.render('src/admin/admin', (err, html) => {
+        if (err) throw err;
+        res.send(html.replace('content', renderToString(<Admin />)));
+    });
+});
+
+app.get('/user', (req, res) =>{
+    res.render('src/user/user', (err, html) => {
+        if (err) throw err;
+        res.send(html.replace('content', renderToString(<User />)));
+    });
+});
+
+app.get('/request', (req, res) =>{
+    res.render('src/request/request', (err, html) => {
+        if (err) throw err;
+        res.send(html.replace('content', renderToString(<Request />)));
+    });
+});
+
+app.get('/notification', (req, res) =>{
+    res.render('src/notification/notification', (err, html) => {
+        if (err) throw err;
+        res.send(html.replace('content', renderToString(<Notification />)));
+    });
+});
+
+app.get('/transaction', (req, res) =>{
+    res.render('src/transaction/transaction', (err, html) => {
+        if (err) throw err;
+        res.send(html.replace('content', renderToString(<Transaction />)));
+    });
+});
+
+app.get('/feedback', (req, res) =>{
+    res.render('src/feedback/feedback', (err, html) => {
+        if (err) throw err;
+        res.send(html.replace('content', renderToString(<Feedback />)));
     });
 });
 
