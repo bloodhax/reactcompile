@@ -105,7 +105,10 @@ class Body extends Component {
                           </div></div></div><div className="wpb_column vc_column_container vc_col-sm-7"><div className="vc_column-inner "><div className="wpb_wrapper"><div className="vc_empty_space" style={{height: 30}}><span className="vc_empty_space_inner" /></div>
                             <div className="wpb_text_column wpb_content_element ">
                               <div className="wpb_wrapper">
-                                <p><span style={{color: '#7e7e7e'}}>Searching for blood banks and donors can become a tiring experience. Not to mentipon the complexities involved like blood type matching, donor qualification, and availability issues. Thus, an app called Bloodhax was created. It focuses on convenience on both donors and patients.</span></p>
+                                <p><span style={{color: '#7e7e7e'}}>Blood bags availability is very important, oftentimes during emergency situations where blood supply bridges death and life. It's not unusual to hear or see stories of someone struggling desperately to find blood for his or her family member or friend. The search is a gruelling experience, since in the Philippines, there is still an existing gap between blood banks, blood donors and patients needing blood.
+Thus, Bloodhax was created. It is a mobile app primarily designed to help people searching and in need for blood from blood banks and network of distributors. For requestors, it makes searching faster and easier by exposing them to a number of blood banks and distributors nearby, by simply clicking on the "Request" button. On the other hand for donors, donating blood makes it more convenient and rewarding. They can immediately pre-qualify themselves for blood donation and even communicate directly with the requestors who need blood bags.
+Bloodhax have linked together the blood banks, blood donors and requestors to facilitate a more convenient way of providing blood bags for people in need. Ultimately, it is your platform for blood donation and requisition.
+</span></p>
                               </div>
                             </div>
                             <div className="vc_empty_space" style={{height: 30}}><span className="vc_empty_space_inner" /></div>

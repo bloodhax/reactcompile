@@ -30,63 +30,63 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
     res.render('src/home/index', (err, html) => {
         if (err) throw err;
-        res.send(html.replace('content', renderToString(<App />)));
+        res.send(html.replace('uhack', renderToString(<App />)));
     });
 });
 
 app.get('/login', (req, res) =>{
     res.render('src/login/login', (err, html) => {
         if (err) throw err;
-        res.send(html.replace('content', renderToString(<Login />)));
+        res.send(html.replace('uhack', renderToString(<Login />)));
     });
 });
 
 app.get('/signup', (req, res) =>{
     res.render('src/signup/signup', (err, html) => {
         if (err) throw err;
-        res.send(html.replace('content', renderToString(<Signup />)));
+        res.send(html.replace('uhack', renderToString(<Signup />)));
     });
 });
 
 app.get('/admin', (req, res) =>{
     res.render('src/admin/admin', (err, html) => {
         if (err) throw err;
-        res.send(html.replace('content', renderToString(<Admin />)));
+        res.send(html.replace('uhack', renderToString(<Admin />)));
     });
 });
 
 app.get('/user', (req, res) =>{
     res.render('src/user/user', (err, html) => {
         if (err) throw err;
-        res.send(html.replace('content', renderToString(<User />)));
+        res.send(html.replace('uhack', renderToString(<User />)));
     });
 });
 
 app.get('/request', (req, res) =>{
     res.render('src/request/request', (err, html) => {
         if (err) throw err;
-        res.send(html.replace('content', renderToString(<Request />)));
+        res.send(html.replace('uhack', renderToString(<Request />)));
     });
 });
 
 app.get('/notification', (req, res) =>{
     res.render('src/notification/notification', (err, html) => {
         if (err) throw err;
-        res.send(html.replace('content', renderToString(<Notification />)));
+        res.send(html.replace('uhack', renderToString(<Notification />)));
     });
 });
 
 app.get('/transaction', (req, res) =>{
     res.render('src/transaction/transaction', (err, html) => {
         if (err) throw err;
-        res.send(html.replace('content', renderToString(<Transaction />)));
+        res.send(html.replace('uhack', renderToString(<Transaction />)));
     });
 });
 
 app.get('/feedback', (req, res) =>{
     res.render('src/feedback/feedback', (err, html) => {
         if (err) throw err;
-        res.send(html.replace('content', renderToString(<Feedback />)));
+        res.send(html.replace('uhack', renderToString(<Feedback />)));
     });
 });
 
