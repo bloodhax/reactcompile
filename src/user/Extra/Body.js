@@ -31,8 +31,6 @@ class Body extends Component {
                           <li id="menu-item-5537" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5537" role="menuitem"><a href="http://massive.themebucket.net/shop/grid-2/">Profile</a>	</li>
                           <li id="menu-item-5536" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5536" role="menuitem"><a href="http://massive.themebucket.net/shop/grid-3/">Account Settings</a>	</li>
                           <li id="menu-item-5535" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5535" role="menuitem"><a href="http://massive.themebucket.net/shop/grid-4/">Log out</a>	</li>
-                          <li id="menu-item-5051" className="menu-item menu-item-type-post_type menu-item-object-product menu-item-5051" role="menuitem"><a href="http://massive.themebucket.net/product/cropped-skinny-isa-jeans-2/">PRODUCT DETAILS</a>	</li>
-                          <li id="menu-item-5052" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5052" role="menuitem"><a href="http://massive.themebucket.net/cart/">SHOPPING CART</a>	</li>
                         </ul>
                       </li>
                       <li className="scrollable-fix" />
