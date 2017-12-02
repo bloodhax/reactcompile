@@ -6,7 +6,9 @@ import morgan from 'morgan';
 import serveStatic from 'serve-static';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import App from './src/App';
+import App from './src/home/App';
+import Login from './src/login/Login'
+import Signup from './src/signup/Signup'
 
 const app = express();
 
@@ -20,9 +22,23 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.render('src/index', (err, html) => {
+    res.render('src/home/index', (err, html) => {
         if (err) throw err;
         res.send(html.replace('content', renderToString(<App />)));
+    });
+});
+
+app.get('/login', (req, res) =>{
+    res.render('src/login/login', (err, html) => {
+        if (err) throw err;
+        res.send(html.replace('content', renderToString(<Login />)));
+    });
+});
+
+app.get('/signup', (req, res) =>{
+    res.render('src/signup/signup', (err, html) => {
+        if (err) throw err;
+        res.send(html.replace('content', renderToString(<Signup />)));
     });
 });
 
