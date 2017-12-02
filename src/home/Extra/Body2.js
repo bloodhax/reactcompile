@@ -12,7 +12,7 @@ class Body2 extends Component {
                 <div className="row">
                   <div className="col-md-3">
                     <aside id="massive_image_uploader-4" className="widget widget_massive_image_uploader">                <figure className="widget-img-wrapper">
-                        <img alt title src="C:/Users/Dell/Documents/uhac/wp-content/uploads/2016/01/logo-invert.png" />
+                        <img alt title src="wp-content/uploads/2016/01/logo-invert.png" />
                       </figure>
                     </aside><aside id="text-2" className="widget widget_text">			<div className="textwidget">Bloodhax is an app that aims to address the difficulties encountered by people searching and in need of blood bags for patients that require them.</div>
                     </aside>                      </div>
