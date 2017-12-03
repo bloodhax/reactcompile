@@ -17,8 +17,8 @@ class Body extends Component {
                       <li id="menu-item-2146" role="menuitem" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2146"><a href="#team">BLOOD BANKS</a></li>
                       <li id="menu-item-5047" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5047" role="menuitem"><a>TRANSACTIONS<span className="indicator"><i className="fa fa-angle-down" /></span></a>
                         <ul className="dropdown" role="menu" aria-hidden="true" style={{right: 'auto', display: 'none'}}>
-                          <li id="menu-item-5537" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5537" role="menuitem"><a href="http://massive.themebucket.net/shop/grid-2/">As Donor</a>	</li>
-                          <li id="menu-item-5536" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5536" role="menuitem"><a href="http://massive.themebucket.net/shop/grid-3/">As Patient</a>	</li>
+                          <li id="menu-item-5537" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5537" role="menuitem"><a href="/transaction">As Donor</a>	</li>
+                          <li id="menu-item-5536" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5536" role="menuitem"><a href="/transaction">As Patient</a>	</li>
                         </ul>
                       </li>
                       <br />
