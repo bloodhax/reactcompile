@@ -15,17 +15,30 @@ import Request from './src/request/Request'
 import Notification from './src/notification/Notification'
 import Transaction from './src/transaction/Transaction'
 import Feedback from './src/feedback/Feedback'
+import session from 'express-session';
+import axios from 'axios';
+import jwt from 'jsonwebtoken';
 
 const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', __dirname);
 
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use(serveStatic(path.join(__dirname, 'dist')));
+app.use(serveStatic(path.join(__dirname, 'assets')));
+
+app.use(session({ secret: 'uhack', resave: false, saveUninitialized: true }));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+const authMiddleware = (req, res, next) => {
+    if (typeof req.session === 'undefined' || (typeof req.session !== 'undefined' && typeof req.session.token === 'undefined')) return res.redirect('/login');
+    return next();
+};
+
+const constructToken = (user_id) => jwt.sign({ user_id }, 'hfGbe9TGRS4vTIr0bUs4');
 
 app.get('/', (req, res) => {
     res.render('src/home/index', (err, html) => {
@@ -41,6 +54,17 @@ app.get('/login', (req, res) =>{
     });
 });
 
+app.post('/login', (req, res) => {
+    axios.post('http://localhost:8700/auth', req.body)
+        .then(response => {
+            req.session.token = response.data.user_id;
+            res.redirect('/user');
+        })
+        .catch(err => {
+            res.redirect('/login')
+        });
+});
+
 app.get('/signup', (req, res) =>{
     res.render('src/signup/signup', (err, html) => {
         if (err) throw err;
@@ -48,28 +72,34 @@ app.get('/signup', (req, res) =>{
     });
 });
 
-app.get('/admin', (req, res) =>{
+app.get('/admin', authMiddleware, (req, res) =>{
     res.render('src/admin/admin', (err, html) => {
         if (err) throw err;
         res.send(html.replace('uhack', renderToString(<Admin />)));
     });
 });
 
-app.get('/user', (req, res) =>{
+app.get('/user', authMiddleware, (req, res) =>{
     res.render('src/user/user', (err, html) => {
         if (err) throw err;
         res.send(html.replace('uhack', renderToString(<User />)));
     });
 });
 
-app.get('/request', (req, res) =>{
-    res.render('src/request/request', (err, html) => {
-        if (err) throw err;
-        res.send(html.replace('uhack', renderToString(<Request />)));
-    });
+app.get('/request', authMiddleware, (req, res) =>{
+    console.log('here');
+    axios.get(`http://localhost:8700/users/${req.session.token}`, { headers: { Authorization: constructToken(req.session.token) } })
+        .then(response => {
+            res.render('src/request/request', (err, html) => {
+                console.log(err);
+                if (err) throw err;
+                res.send(html.replace('uhack', renderToString(<Request user={response.data} />)));
+            });
+        })
+        .catch(err => res.redirect('/request'));
 });
 
-app.get('/notification', (req, res) =>{
+app.get('/notification', authMiddleware, (req, res) =>{
     res.render('src/notification/notification', (err, html) => {
         if (err) throw err;
         res.send(html.replace('uhack', renderToString(<Notification />)));
@@ -88,35 +118,6 @@ app.get('/feedback', (req, res) =>{
         if (err) throw err;
         res.send(html.replace('uhack', renderToString(<Feedback />)));
     });
-});
-
-var people = [];
-
-app.get('/api/people', (req, res) => {
-    console.log(people);
-    res.send(people);
-});
-
-app.delete('/api/people', (req, res) => {
-    
-    for(var i = 0; i < people.length; i++){
-        
-        if(req.query.id == people[i].id){
-            people.splice(i, 1);
-            res.send(people);
-        }
-    }
-    
-});
-
-app.post('/api/people', (req, res) => {
-    people.push({
-        id: people.length + 1,
-        name: req.body.name,
-        age: req.body.age
-    });
-
-    res.send(people);
 });
 
 app.listen(3000, () => {

@@ -64,8 +64,7 @@ class Body extends Component {
                   </div>
                   <p style={{color: 'indianred', fontWeight: 'bold', margin: 'auto'}}> Quantity(Per bag): </p>
                   <input id="Massivee3f18aba48576bb1fa4cbc33f0a3e769-id" type="Number" style={{width: '55%'}} name="quantity" className="form-control" />
-                  <p style={{color: 'indianred', fontWeight: 'bold', margin: 'auto'}}> Blood Type: </p>
-                  <input id="Massivee3f18aba48576bb1fa4cbc33f0a3e769-id" type="Text" style={{width: '55%'}} name="quantity" className="form-control" />
+                  <p style={{color: 'indianred', fontWeight: 'bold', margin: 'auto'}}> Blood Type: {this.props.user.blood_type} </p>
                   <br /><br /><a type="submit" target="_blank" className="btn btn-dark-solid btn-medium">Request</a><br /><br /><br />
                   <center />
                 </center>

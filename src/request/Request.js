@@ -9,7 +9,7 @@ class Request extends Component {
 
     render() {
         return[
-            <Body key='1'/>,
+            <Body key='1' user={this.props.user}/>,
             <Body2 key='2'/>
         ];
     }
