@@ -65,19 +65,6 @@ class Body extends Component {
                   <p style={{color: 'indianred', fontWeight: 'bold', margin: 'auto'}}> Quantity(Per bag): </p>
                   <input id="Massivee3f18aba48576bb1fa4cbc33f0a3e769-id" type="Number" style={{width: '55%'}} name="quantity" className="form-control" />
                   <p style={{color: 'indianred', fontWeight: 'bold', margin: 'auto'}}> Blood Type: </p>
-                  <select name="rating" id style={{width: '55%'}} className="form-control">
-                    <option value>Blood Type</option>
-                    <option value={5}>A+</option>
-                    <option value={5}>A-</option>
-                    <option value={4}>B+</option>
-                    <option value={4}>B-</option>
-                    <option value={3}>AB+</option>
-                    <option value={3}>AB-</option>
-                    <option value={2}>O+</option>
-                    <option value={2}>O-</option>
-                    <option value={1}>Others:</option>
-                  </select>
-                  <p style={{color: 'indianred', fontWeight: 'bold', margin: 'auto'}}> Hospital/Clinic: </p>
                   <input id="Massivee3f18aba48576bb1fa4cbc33f0a3e769-id" type="Text" style={{width: '55%'}} name="quantity" className="form-control" />
                   <br /><br /><a type="submit" target="_blank" className="btn btn-dark-solid btn-medium">Request</a><br /><br /><br />
                   <center />

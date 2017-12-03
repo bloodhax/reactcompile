@@ -13,9 +13,9 @@ class Body extends Component {
                   <div id="massive-menu" className="menuzord menuzord-responsive"><a href="javascript:void(0)" style={{display: 'none'}} className="showhide"><em /><em /><em /></a><a href="http://massive.themebucket.net/" title="Massive" className="logo-brand"><img src="wp-content/uploads/2016/01/logo-invert.png" data-retina="wp-content/uploads/2016/01/massive-dark-logo@2x.png" alt="Massive" /></a>
                     <ul id="menu-x-one-page-default" role="menubar" style={{maxHeight: 400}} className="menuzord-menu menuzord-indented scrollable">
                       <li id="menu-item-2144" role="menuitem" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2144" />
-                      <li id="menu-item-2145" role="menuitem" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2145"><a href="#about">NOTIFICATIONS</a></li>
+                      <li id="menu-item-2145" role="menuitem" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2145"><a href="/notification">NOTIFICATIONS</a></li>
                       <li id="menu-item-2146" role="menuitem" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2146"><a href="#team">BLOOD BANKS</a></li>
-                      <li id="menu-item-2147" role="menuitem" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2147"><a href="#portfolio">TRANSACTIONS</a></li>
+                      <li id="menu-item-2147" role="menuitem" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2147"><a href="/transaction">TRANSACTIONS</a></li>
                       <br />
                       <br />
                       <br />
