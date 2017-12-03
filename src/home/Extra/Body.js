@@ -148,6 +148,18 @@ Bloodhax have linked together the blood banks, blood donors and requestors to fa
                           </ul>
                         </div>
                       </div>
+                      <div className="c-list-row">
+                        <label>Benefits of BloodLetting</label>
+                        <div className="info">
+                          <br/>
+                          Have you ever considered donating blood? Surprising as it may seem, there are actually a quite good number of benefits blood letting can give you. Below are just some of them.<br/><br/>
+                          <span>Blood letting promotes good health. It is known to reduce the risks of having heart disease and certain types of cancer like stomach, lung, liver and colon. During blood letting, certain amount of blood is being removed from the body which helps to balance iron levels in the blood. This, in return can help blood donors prevent those diseases associated with excessive iron in the body. Furthermore, blood letting gives way to blood supply reflenishment and better blood flow that supports and maintains efficient body functions.
+Blood letting updates you about your health condition and tells you your blood type. Before you can proceed on donating your blood, you undergo first a screening and medical checkup. It determines if your fit to donate your blood. You are practically given a free medical checkup which lets you know your present health condition or issues, if there's any. You will also be informed of your blood type, which is a good thing considering that you're not paying anything.
+Blood letting gives you a sense of accomplishment knowing that you gave back to your community and helped save lives through your blood. By donating your blood, you have extended a great humanitarian service to others in need. Simply put, your humble efforts of participating in a blood letting activity have made this world a better place.
+Through Bloodhax, donating blood have been made so easy. Be a blood donor now and enjoy these benefits!</span>
+
+                        </div>
+                      </div>
                       
                       <div className="c-list-row">
                         <label>For the overall guidelines in the whole blood letting process, please check out Red Cross Page.</label>
