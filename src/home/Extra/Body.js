@@ -115,6 +115,58 @@ Bloodhax have linked together the blood banks, blood donors and requestors to fa
                             <a className="btn btn-dark-solid btn-small " href="/signup">SIGN UP NOW!</a></div></div></div></div></div></div><div className="vc_row-full-width vc_clearfix" /><div data-vc-full-width="true" data-vc-full-width-init="false" className="vc_row wpb_row vc_row-fluid vc_custom_1453540542511"><div className="wpb_column vc_column_container vc_col-sm-12"><div className="vc_column-inner "><div className="wpb_wrapper"><div className="text-center">
                         </div>
                       </div></div></div></div>
+                <section className="body-content ">
+        <div className="page-content">
+          <div className="container">
+            <div className="row">
+              <div className="heading-title text-center">
+                <h3 className="text-uppercase">STEPS</h3>
+              </div>
+              <div className="career-list">
+                <div className="col-md-12 ">
+                  <div className="featured-item career-box text-center">
+                    <div className="icon">
+                      <i className="fa fa-heart" />
+                    </div>
+                    <div className="title text-uppercase">
+                      <h4>Guidelines For Donating Blood for Philippine Red Cross</h4>
+                    </div>
+                    <div className="desc">
+                      As the main body facilitating blood letting activities in the country, Philippine Red Cross issued the basic requirements before anyone can be allowed to donate blood. Please refer to the list below:
+                    </div>
+                    <a href="#" className="show-detail">View Details</a>
+                    <div className="career-details-info">
+                      <div className="c-list-row">
+                        <label>require</label>
+                        <div className="info">
+                          <ul className="icon-list">
+                            <li><i className="fa fa-check theme-color" /> In Good Health</li>
+                            <li><i className="fa fa-check theme-color" /> Between 16 to 65 years old (16 and 17 years old need parents consent)</li>
+                            <li><i className="fa fa-check theme-color" /> Weigh at least 110 pounds</li>
+                            <li><i className="fa fa-check theme-color" /> Have a blood pressure between: Systolic: 90-160 mmHg, Diastolic: 60-100 mmHg</li>
+                            <li><i className="fa fa-check theme-color" /> Pass the physical and health history assessments</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <div className="c-list-row">
+                        <label>For the overall guidelines in the whole blood letting process, please check out Red Cross Page.</label>
+                      </div>
+                      <center>
+                      <div className="m-top-30">
+                        <a href="https://www.redcross.org.ph/get-involved/give-blood/how-to-donate" data-scroll className="btn btn-medium  btn-theme-color apply-btn"> Red Cross Page</a>
+                        <br/>
+                        <a href="#" className=" apply-btn cancel-btn"> Close Details</a>
+                      </div>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
                 <div className="divider d-solid d-single Massivea13480450eebef51eac76f0e0489bf5b" role="divider" />
                 <section id="contactus">
                   <div data-vc-full-width="true" data-vc-full-width-init="true" className="vc_row wpb_row vc_row-fluid vc_custom_1452596294842" style={{position: 'relative', left: 0, boxSizing: 'border-box', width: 1349, paddingLeft: 0, paddingRight: 0}}><div className="container"><div className="row"><div className="wpb_column vc_column_container vc_col-sm-5"><div className="vc_column-inner "><div className="wpb_wrapper">
@@ -191,6 +243,7 @@ Bloodhax have linked together the blood banks, blood donors and requestors to fa
             </div>
           </div>
         </div>
+        
       </div>
         ];
     }

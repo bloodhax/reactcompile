@@ -57,7 +57,7 @@ class Body extends Component {
                           <div className="wpb_column vc_column_container vc_col-sm-12">
                             <div className="vc_column-inner">
                               <div className="wpb_wrapper">
-                                <a style={{width: '33.33%', float: 'right', marginRight: 94}} className="btn btn-dark-border btn-small " href="#">FIND BLOOD DONOR NEARBY</a>
+                                <a style={{width: '33.33%', float: 'right', marginRight: 94, height: '57px', fontSize: '18px'}} className="btn btn-dark-border btn-small " href="#">FIND BLOOD DONOR NEARBY</a>
                               </div>
                             </div>
                           </div>
