@@ -87,16 +87,23 @@ app.get('/user', authMiddleware, (req, res) =>{
 });
 
 app.get('/request', authMiddleware, (req, res) =>{
-    console.log('here');
     axios.get(`http://localhost:8700/users/${req.session.token}`, { headers: { Authorization: constructToken(req.session.token) } })
         .then(response => {
             res.render('src/request/request', (err, html) => {
-                console.log(err);
                 if (err) throw err;
                 res.send(html.replace('uhack', renderToString(<Request user={response.data} />)));
             });
         })
         .catch(err => res.redirect('/request'));
+});
+
+app.post('/request', authMiddleware, (req, res) => {
+    axios.post(`http://localhost:8700/requests`, req.body, { headers: { Authorization: constructToken(req.session.token) } })
+        .then(response => {
+            console.log(response.data);
+            res.redirect('/user');
+        })
+        .catch(err => console.log(err));
 });
 
 app.get('/notification', authMiddleware, (req, res) =>{

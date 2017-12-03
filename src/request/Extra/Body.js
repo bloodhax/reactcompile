@@ -59,14 +59,15 @@ class Body extends Component {
             <div style={{minHeight: 500, background: '#f5f5f5'}}><br /><br /><br /><br />
               <div style={{position: 'relative', left: '28%', minHeight: 50, width: '40.33%', background: '#fff', WebkitBoxShadow: '-1px 1px 13px black', zIndex: 99, borderRadius: 10}}>
                 <center><br /><br />
-                  <div className="heading-title-alt border text-center Massive158bbce44871d3a3c8b4f113b7ab70b2">
-                    <h3 className="ctitle-border black-color">FIND BLOOD DONOR NEARBY</h3><span className="cst-color">All fields are required.</span>
-                  </div>
-                  <p style={{color: 'indianred', fontWeight: 'bold', margin: 'auto'}}> Quantity(Per bag): </p>
-                  <input id="Massivee3f18aba48576bb1fa4cbc33f0a3e769-id" type="Number" style={{width: '55%'}} name="quantity" className="form-control" />
-                  <p style={{color: 'indianred', fontWeight: 'bold', margin: 'auto'}}> Blood Type: {this.props.user.blood_type} </p>
-                  <br /><br /><a type="submit" target="_blank" className="btn btn-dark-solid btn-medium">Request</a><br /><br /><br />
-                  <center />
+                  <form method="POST">
+                    <div className="heading-title-alt border text-center Massive158bbce44871d3a3c8b4f113b7ab70b2">
+                      <h3 className="ctitle-border black-color">FIND BLOOD DONOR NEARBY</h3><span className="cst-color">All fields are required.</span>
+                    </div>
+                    <p style={{color: 'indianred', fontWeight: 'bold', margin: 'auto'}}> Quantity(Per bag): </p>
+                    <input id="Massivee3f18aba48576bb1fa4cbc33f0a3e769-id" type="Number" style={{width: '55%'}} name="amount" className="form-control" />
+                    <p style={{color: 'indianred', fontWeight: 'bold', margin: 'auto'}}> Blood Type: {this.props.user.blood_type} </p>
+                    <br /><br /><button type="submit" className="btn btn-dark-solid btn-medium">Request</button><br /><br /><br />
+                  </form>
                 </center>
               </div>
               <br /><br /><br />
